@@ -54,6 +54,7 @@ class WhatsApp extends StatelessWidget {
             children: [
               Expanded(
                 child: TextFormField(
+                  style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Type a Message ...',
                     hintStyle: TextStyle(
@@ -63,6 +64,10 @@ class WhatsApp extends StatelessWidget {
                       fontFamily: 'Inter_18pt',
                     ),
                     enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xff168C4B)),
+                      borderRadius: BorderRadius.circular(39),
+                    ),
+                    focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Color(0xff168C4B)),
                       borderRadius: BorderRadius.circular(39),
                     ),
@@ -110,147 +115,26 @@ class WhatsApp extends StatelessWidget {
                 ),
               ),
             ),
-            Column(
-              children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 33, left: 15),
-                    height: 51,
-                    width: 79,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(16),
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                      ),
-                      color: Color(0xff168C4B),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Hello !',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          fontFamily: 'Inter_18pt',
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      margin: EdgeInsets.only(top: 33, left: 15),
+                      height: 51,
+                      width: 79,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(16),
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
                         ),
+                        color: Color(0xff168C4B),
                       ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 16, right: 16),
-                    height: 51,
-                    width: 79,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16),
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                      ),
-                      color: Color(0xff232D36),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Hello !',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          fontFamily: 'Inter_18pt',
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Container(
-                    padding: EdgeInsets.only(right: 18),
-                    margin: EdgeInsets.only(top: 16, left: 15),
-                    height: 150,
-                    width: 268,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(16),
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                      ),
-                      color: Color(0xff168C4B),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Hey! Have you ever thought\nabout how random moments\ncan sometimes turn into the\nbest memories? It’s like the\nuniverse loves to surprise us\nwhen we least expect it!',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          fontFamily: 'Inter_18pt',
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 16, left: 15),
-                    height: 252,
-                    width: 268,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(16),
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                      ),
-                      color: Color(0xff168C4B),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 15),
-                      child: Column(
-                        mainAxisAlignment: .center,
-                        crossAxisAlignment: .start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 7),
-                            child: Text(
-                              'what a Great Content Tp learn Flutter',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white,
-                                fontFamily: 'Inter_18pt',
-                              ),
-                            ),
-                          ),
-                          Image.asset('assets/images/Route_image.png'),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Container(
-                    margin: EdgeInsets.only(top: 7, right: 16),
-                    height: 74,
-                    width: 267,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16),
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                      ),
-                      color: Color(0xff232D36),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
                       child: Center(
                         child: Text(
-                          'what a Great Content Tp learn Flutter',
+                          'Hello !',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w500,
@@ -261,8 +145,131 @@ class WhatsApp extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
-              ],
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      margin: EdgeInsets.only(top: 16, right: 16),
+                      height: 51,
+                      width: 79,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16),
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
+                        color: Color(0xff232D36),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Hello !',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            fontFamily: 'Inter_18pt',
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      padding: EdgeInsets.only(right: 18),
+                      margin: EdgeInsets.only(top: 16, left: 15),
+                      height: 150,
+                      width: 268,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(16),
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
+                        color: Color(0xff168C4B),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Hey! Have you ever thought\nabout how random moments\ncan sometimes turn into the\nbest memories? It’s like the\nuniverse loves to surprise us\nwhen we least expect it!',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            fontFamily: 'Inter_18pt',
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      margin: EdgeInsets.only(top: 16, left: 15),
+                      height: 252,
+                      width: 268,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(16),
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
+                        color: Color(0xff168C4B),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 15),
+                        child: Column(
+                          mainAxisAlignment: .center,
+                          crossAxisAlignment: .start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 7),
+                              child: Text(
+                                'what a Great Content Tp learn Flutter',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white,
+                                  fontFamily: 'Inter_18pt',
+                                ),
+                              ),
+                            ),
+                            Image.asset('assets/images/Route_image.png'),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      margin: EdgeInsets.only(top: 7, right: 16),
+                      height: 74,
+                      width: 267,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16),
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
+                        color: Color(0xff232D36),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Center(
+                          child: Text(
+                            'what a Great Content Tp learn Flutter',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
+                              fontFamily: 'Inter_18pt',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
